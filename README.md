@@ -97,9 +97,9 @@ POST	/api/auth/register		Registrar usuario
 POST	/api/auth/login			Iniciar sesión
 
 ### Tasks
-GET		/api/tasks				Listar tareas del usuario
-POST	/api/tasks				Crear una tarea
-PUT		/api/tasks/:id			Editar tarea
+GET	/api/tasks			Listar tareas del usuario
+POST	/api/tasks			Crear una tarea
+PUT	/api/tasks/:id			Editar tarea
 DELETE	/api/tasks/:id			Eliminar tarea
 
 ---
