@@ -1,1 +1,5 @@
-".vs" 
+# Ignorar archivos de Visual Studio
+.vs/
+# Ignora archivos de Node/NPM
+node_modules/
+dist/
