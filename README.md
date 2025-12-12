@@ -247,8 +247,8 @@ src/
 
 El proyecto ha sido desplegado y está completamente funcional en la nube.
 
-- Frontend     Vercel      task-manager-frontend-azure-seven.vercel.app
-- Backend      Render      task-manager-backend-yxmh.onrender.com
+- Frontend (Vercel): task-manager-frontend-azure-seven.vercel.app
+- Backend (Render):  task-manager-backend-yxmh.onrender.com
 
 
 ---
