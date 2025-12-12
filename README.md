@@ -48,7 +48,9 @@ Asegurate de tener instalado:
 La estructura general es:
 
 /task-manager
+
    /backend
+
    /frontend 
 
 ---
@@ -63,7 +65,11 @@ npm install
 
 ### Crear un archivo .env basado en .env.example
 PORT=4000
+
+
 MONGO_URI=mongodb://localhost:27017/taskmanager
+
+
 JWT_SECRET=supersecretkey
 
 ### Ejecutar el servidor
@@ -93,14 +99,18 @@ http://localhost:5173
 ## Endpoints principales
 
 ### Auth
-POST	/api/auth/register		Registrar usuario
-POST	/api/auth/login			Iniciar sesión
+POST    /api/auth/register    Registrar usuario
+
+POST    /api/auth/login       Iniciar sesión
 
 ### Tasks
-GET	/api/tasks			Listar tareas del usuario
-POST	/api/tasks			Crear una tarea
-PUT	/api/tasks/:id			Editar tarea
-DELETE	/api/tasks/:id			Eliminar tarea
+GET     /api/tasks            Listar tareas del usuario
+
+POST    /api/tasks            Crear una tarea
+
+PUT     /api/tasks/:id        Editar tarea
+
+DELETE  /api/tasks/:id        Eliminar tarea
 
 ---
 
@@ -111,8 +121,11 @@ npm test
 
 ### Configuración destacada:
 Base de datos de testing independiente (taskmanager_test)
+
 Tests unitarios del servicio de autenticación
+
 Tests de integración de rutas con Supertest
+
 Carga automática de .env.test
 
 ---
@@ -120,27 +133,49 @@ Carga automática de .env.test
 ## Arquitectura Backend
 
 src/
+
     app.js
+
     server.js
+
     config/
+
         db.js
+
         db_test.js
+
     models/
+
         user.model.js
+
         task.model.js
+
     modules/
+
         auth/
+
             auth.controller.js
+
             auth.service.js
+
             auth.routes.js
+
         tasks/
+
             task.controller.js
+
             task.service.js
+
             task.routes.js
+
     middlewares/
+
         auth.js
+
     utils/
+
         generateJWT.js
+
     tests/
 
 ---
@@ -148,27 +183,49 @@ src/
 ## Arquitectura Frontend
 
 src/
+
     api/
+
         axios.js
+
     context/
+
         AuthContext.jsx
+
     pages/
-	Home.jsx
-	Home.css
+
+        Home.jsx
+
+        Home.css
+
         Login.jsx
-	Login.css
+
+        Login.css
+
         Register.jsx
-	Register.css
+
+        Register.css
+
         Tasks.jsx
-	Tasks.css
+
+        Tasks.css
+
     components/
+
         TaskForm.jsx
+
         TaskItem.jsx
-	TaskItem.css
+
+        TaskItem.css
+
     router/
+
         AppRouter.jsx
+
         PrivateRoute.jsx
+
     hooks/
+
         useAuth.js
 
 ---
@@ -190,14 +247,15 @@ src/
 
 El proyecto ha sido desplegado y está completamente funcional en la nube.
 
-- Frontend	Vercel		task-manager-frontend-azure-seven.vercel.app
-- Backend	Render		task-manager-backend-yxmh.onrender.com
+- Frontend     Vercel      task-manager-frontend-azure-seven.vercel.app
+- Backend      Render      task-manager-backend-yxmh.onrender.com
 
 
 ---
 
 ## Autor
 Alexander Raúl Suarez Pereda
+
 Proyecto desarrollado como parte de una prueba técnica Full Stack.
 
 
